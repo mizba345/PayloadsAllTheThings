@@ -45,7 +45,11 @@ SELECT group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name
 ```sql
 SELECT sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='table_name'
 ```
+## Integer/String based - Extract specific data
 
+```sql
+SELECT 'column_name' FROM 'table_name' WHERE 'column_name'='column_entry' '
+```
 For a clean output
 
 ```sql
